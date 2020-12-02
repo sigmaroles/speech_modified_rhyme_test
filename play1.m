@@ -7,7 +7,7 @@ NOISE = 2; % zero, one two or three; zero is no noise, the rest are levels
 wav_root = "/home/sigmaroles/workspaces/datasets/ModifiedRhymeTest/Selected";
 wdata = readtable('words.csv');
 
-talkerids = ["F1", "F2", "M5",  "M3",];
+talkerids = ["F1", "F2", "M5",  "M3"];
 ROW_MAX = 50;
 COL_MAX = 6;
 
