@@ -5,8 +5,8 @@
 clear all;
 screen_init;
 
-NOISE = 5;
-n_iter = 5;
+NOISE = 2;
+n_iter = 2;
 
 wav_root = "/home/sigmaroles/workspaces/datasets/ModifiedRhymeTest/Selected";
 wdata = readtable('words.csv');
@@ -67,6 +67,15 @@ for i = 1:n_iter
     else
         sprintf("clicked outside")
     end
+
+    if word_col == cindex % correct
+        Screen('DrawText', wHandle, 'CORRECT', xCenter-DELTA_X, yCenter, GREEN);
+    else
+        Screen('DrawText', wHandle, 'WRONG', xCenter-DELTA_X, yCenter, RED);
+    end
+    Screen('Flip',wHandle);
+    WaitSecs(1.6);
+
 
 end
 

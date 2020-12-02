@@ -19,7 +19,7 @@ WHITE = [white, white, white];
 DARKGREEN = [62, 84, 61];
 
 textSize = 62;
-setXmax = 1224;
+setXmax = 1090;
 setYmax = 788;
 
 [wHandle, wHandleRect] = Screen('OpenWindow', screenNumber, black, [0 0 setXmax setYmax]);
