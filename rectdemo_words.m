@@ -5,8 +5,8 @@
 clear all;
 screen_init;
 
-NOISE = 2;
-n_iter = 2;
+NOISE = 4;
+n_iter = 7;
 
 wav_root = "/home/sigmaroles/workspaces/datasets/ModifiedRhymeTest/Selected";
 wdata = readtable('words.csv');

@@ -1,3 +1,0 @@
-clear;
-
-screen_init;
